@@ -1,0 +1,64 @@
+/* Style for the navigation bar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333; /* Change to fit your theme */
+  padding: 10px 20px;
+  height: 80px; /* Adjust height as needed */
+}
+
+/* Style for the logo */
+.navLogo p {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Unordered list for the navigation items */
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for each list item */
+.nav ul li {
+  margin-left: 20px; /* Spacing between navigation items */
+}
+
+/* Link styles */
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Shopping and Profile icon styles */
+.shopping, .profile {
+  width: 30px; /* Adjust size as needed */
+  height: 30px;
+  cursor: pointer; /* Make icons appear clickable */
+  margin-left: 10px; /* Add space between the icons and other elements */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for icons */
+.shopping:hover, .profile:hover {
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+/* Aligning the image inside list items properly */
+.nav ul li img {
+  vertical-align: middle; /* Keeps icons aligned with text */
+}

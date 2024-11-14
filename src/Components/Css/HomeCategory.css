@@ -1,0 +1,41 @@
+.category-container {
+    max-width: 1200px; /* Limit width of container */
+    margin: auto; /* Center align */
+    padding: 20px; /* Padding around */
+}
+
+h2 {
+    text-align: center; /* Center heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.category-grid {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between items */
+}
+
+.category-card {
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Inner padding */
+    text-align: center; /* Center align text */
+    background-color: #fff; /* Background color */
+    transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.category-card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Hover effect */
+}
+
+.category-image {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for image */
+}
+
+.old-price {
+    text-decoration: line-through; /* Strike through old price */
+    color: red; /* Color for old price */
+    margin-left: 10px; /* Space from new price */
+}

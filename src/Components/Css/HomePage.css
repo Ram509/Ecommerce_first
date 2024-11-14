@@ -1,0 +1,108 @@
+/* Container for the slider */
+.slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Full width */
+  max-width: 1400px; /* Maximum width for larger screens */
+  margin: auto; /* Center align */
+}
+
+/* Slider container that holds the images */
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+}
+
+/* Individual slider images */
+.slider-image {
+  width: 100%;
+  height: auto;
+  flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Navigation arrows styling */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s ease;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.arrow img {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hover effect for arrows */
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
+
+/* General page styles */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 20px;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+/* Category section styling */
+.category-container {
+  max-width: 1200px; /* Limit width of container */
+  margin: auto; /* Center align */
+  padding: 20px; /* Padding around */
+}
+
+h2 {
+  text-align: center; /* Center heading */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.category-grid {
+  display: grid; /* Use grid for layout */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between items */
+}
+
+.category-card {
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Inner padding */
+  text-align: center; /* Center align text */
+  background-color: #fff; /* Background color */
+  transition: box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+
+.category-card:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Hover effect */
+}
+
+.category-image {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Rounded corners for image */
+}
+
+.old-price {
+  text-decoration: line-through; /* Strike through old price */
+  color: red; /* Color for old price */
+  margin-left: 10px; /* Space from new price */
+}
